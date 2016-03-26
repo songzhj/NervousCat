@@ -26,6 +26,11 @@ function addCircles() {
             if (indexX == 4 && indexY == 4) {
                 circle.setCircleType(3);
             }
+            circle.addEventListener("click", function(event) {
+               if (event.target.getCircleType() != 3) {
+                   event.target.setCircleType(2);
+               }
+            });
         }
     }
 }
