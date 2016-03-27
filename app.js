@@ -198,7 +198,7 @@ function addCircles() {
                 circle.setCircleType(2);
             }
             circle.addEventListener("click", function(event) {
-               if (event.target.getCircleType() != 3) {
+               if (event.target.getCircleType() == 1) {
                    event.target.setCircleType(2);
                } else {
                    return;
